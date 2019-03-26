@@ -31,6 +31,12 @@ app.use(session({
 }))
 // flash 中间件，用来显示通知
 app.use(flash())
+
+// 处理表单及文件上传的中间件
+app.use(require('express-formidable')({
+  uploadDir: path.join(__dirname, 'public/img'), // 上传文件目录
+  keepExtensions: true// 保留后缀
+}))
 // app.locals 上通常挂载常量信息（如博客名、描述、作者这种不会变的信息），res.locals 上通常挂载变量信息，即每次请求可能的值都不一样（如请求者信息，res.locals.user = req.session.user）
 // 设置模板全局常量
 app.locals.blog = {
