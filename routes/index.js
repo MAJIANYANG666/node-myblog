@@ -1,4 +1,5 @@
 module.exports = function (app) {
+  // app有get和use，use是使用中间件，这里是使用router,然后交由router的get,post处理
   app.get('/', function (req, res) {
     res.redirect('/posts')
   })
