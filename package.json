@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "istanbul cover node_modules/mocha/bin/_mocha"
+    "test": "istanbul cover node_modules/mocha/bin/_mocha",
+    "start": "cross-env NODE_ENV=production pm2 start index.js --name 'my-blog'"
   },
   "author": "",
   "license": "ISC",
@@ -25,6 +26,7 @@
     "winston": "^3.2.1"
   },
   "devDependencies": {
+    "cross-env": "^5.2.0",
     "eslint": "^5.15.3",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
