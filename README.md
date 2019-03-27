@@ -4,8 +4,12 @@
 
 项目已部署在阿里云上
 
-技术栈 : express mongodb(Mongolass) ejs pm2 
+## 技术栈 : 
+
+express mongodb(Mongolass) ejs pm2 
 
 winston express-winston mocha supertest
 
-功能：注册 登录 登出 查看文章 发表文章 修改文章 删除文章 留言
+## 功能：
+
+注册 登录 登出 查看文章 发表文章 修改文章 删除文章 留言
